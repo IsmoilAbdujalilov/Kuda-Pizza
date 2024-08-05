@@ -4,19 +4,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 40px;
   max-width: 1440px;
+
+  @media only screen and (max-width: 1175px) {
+    padding: 0 40px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    padding: 0 20px;
+  }
 }
 
 :root {
   --text-color: #191919;
   --border-color: #f0f0f0;
+  --vector-color: #c4c4c4;
+  --drop-down-shadow: #1919191a;
+  --body-background-color: #f9f9f9;
+  --stick-background-color: #000000;
+  --categories-hover-color: #e23535;
   --header-background-color: #ffffff;
+  --input-placeholder-color: #a5a5a5;
+  --filter-background: rgba(25, 25, 25, 0.4);
+
   --korzinka-background-color: #ff7010;
 }
 
@@ -54,4 +71,5 @@ button {
 
 body {
   font-family: "Inter";
+  background-color: var(--body-background-color);
 }
